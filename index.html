@@ -23,33 +23,50 @@
       color:black;
       text-decoration: none;
     }
+    body{
+      margin:0;
+    }
     h1{
-      font-size:2rem;
+      font-size:3rem;
+      border-bottom:3px solid black;
+      text-align: center;
+      margin:0;
+      padding:2rem
     }
     ol{
-      font-size:1.5rem;
+    border-right: 3px solid black;
+    width:5rem;
+    margin:0;
+    padding:1rem;
+    padding-left:2rem;
     }
-    article{
-      text-align:center;
+
+  #grid{
+      display:grid;
+      grid-template-columns: 9rem 1fr;
+    }
+    iframe{
+      width: 95%; height:70%;
     }
   </style>
   </head>
   <body>
-    <nav>
-<h1><a class="nav" href="index.html" style="color:green;font-style:italic">AI 그림<-</a></h1>
+
+<h1><a class="nav" href="index.html">AI 그림</a></h1>
+<div id="grid">
     <ol>
       <li><a class="nav" href="1.html">Midjourney</a></li>
       <li> <a class="nav" href="2.html">NAI</a></li>
     </ol>
-</nav>
 <article>
 <h2>AI 그림</h2>
-<p><iframe style="max-width:100%; height:auto" src="https://www.youtube.com/embed/SVcsDDABEkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p><iframe src="https://www.youtube.com/embed/SVcsDDABEkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 <p>
   AI art refers to art generated with the assistance of artificial intelligence.<br>AI is a field of computer science that focuses on building machines that mimic human intelligence or even simulate the human brain through a set of algorithms.
 </p>
-<p id="share">Your thoughts</p>
 </article>
+</div>
+<p id="share">Your thoughts</p>
 <div id="disqus_thread"></div>
 <script>
     /**
