@@ -11,7 +11,7 @@ body{
   margin:0;
 }
 img{
-   max-width:95%;
+   max-width:100%;
    height:auto;
 }
 h1{
@@ -36,6 +36,7 @@ padding-left:1.5rem;
 #grid{
   display:grid;
   grid-template-columns: 10rem 1fr;
+  margin-right:3%;
 }
 @media(max-width:31.25rem){
   #grid{
@@ -47,4 +48,9 @@ padding-left:1.5rem;
     h1{
 border-bottom:none;
 }
+    article{
+      margin-left:5%;
+      margin-right: 2%;
+      overflow-wrap: break-word;
+    }
 }
