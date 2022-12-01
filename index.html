@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>AI 그림-welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CB5BN1111"></script>
     <script>
@@ -14,9 +16,12 @@
       gtag('config', 'G-0CB5BN1111');
     </script>
     <link rel="stylesheet" href="style.css">
+    <script src="colors.js"></script>
   </head>
   <body>
-
+    <input type="button" value="night" onclick="
+    nightDay(this);
+    ">
 <h1><a class="nav" href="index.html">AI 그림</a></h1>
 <div id="grid">
     <ol>
@@ -25,7 +30,8 @@
     </ol>
 <article>
 <h2>AI 그림</h2>
-<p><iframe src="https://www.youtube.com/embed/SVcsDDABEkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p>
+  <div class="video-wrap"><iframe src="https://www.youtube.com/embed/SVcsDDABEkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 <p>
   AI art refers to art generated with the assistance of artificial intelligence.<br>AI is a field of computer science that focuses on building machines that mimic human intelligence or even simulate the human brain through a set of algorithms.
 </p>
