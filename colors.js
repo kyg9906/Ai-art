@@ -8,6 +8,11 @@ var Links={
     $('a').css('color', color);
   }
 }
+var Disq={
+  setColor:function(color){
+  $('#disqus_thread').css('color',color);
+}
+}
   var Borderbottom={
     setColor: function(color){
       $('h1').css('border-bottom-color',color);
@@ -36,6 +41,7 @@ var Body={
       Links.setColor('powderblue');
       Body.setBackgroundColor('black');
       Body.setColor('white');
+      Disq.setColor('white');
       Borderbottom.setColor('white');
       Borderright.setColor('white');
       self.value = 'day';
@@ -43,6 +49,7 @@ var Body={
       Links.setColor('black');
       Body.setBackgroundColor('white');
       Body.setColor('black');
+      Disq.setColor('black');
       Borderbottom.setColor('black');
       Borderright.setColor('black');
       self.value= 'night';
